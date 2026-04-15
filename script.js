@@ -310,9 +310,19 @@ document.addEventListener('DOMContentLoaded', () => {
 function initMap() {
     map = L.map('map').setView([20, 0], 2);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
     }).addTo(map);
+
+    // Custom HUD marker icon (Diamond pin)
+    const hudIcon = L.divIcon({
+        className: 'hud-marker',
+        html: '<div class="marker-pulse"></div><div class="marker-core"></div>',
+        iconSize: [20, 20],
+        iconAnchor: [10, 20] // Precise anchor for the tip
+    });
 
     // Group stations by coordinates to avoid overlapping markers
     const groupedStations = {};
@@ -327,7 +337,7 @@ function initMap() {
     // Add markers for each unique location
     Object.entries(groupedStations).forEach(([coords, stationsAtLocation]) => {
         const [lat, lng] = coords.split(',').map(Number);
-        const marker = L.marker([lat, lng]).addTo(map);
+        const marker = L.marker([lat, lng], { icon: hudIcon }).addTo(map);
         
         const country = stationsAtLocation[0].country;
         const region = stationsAtLocation[0].region;

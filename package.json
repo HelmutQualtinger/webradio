@@ -1,0 +1,21 @@
+{
+  "name": "webradio",
+  "version": "1.0.0",
+  "description": "A vintage-inspired web radio receiver with a high-fidelity 1970s aesthetic. This project features a brushed steel interface, analog-style displays, and a collection of international radio stations including the Bavarian BR suite.",
+  "main": "capture.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelmutQualtinger/webradio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HelmutQualtinger/webradio/issues"
+  },
+  "homepage": "https://github.com/HelmutQualtinger/webradio#readme"
+}

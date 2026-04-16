@@ -87,6 +87,15 @@ const stations = [
     { name: "RFI Monde", country: "France", region: "Europe", lat: 48.8566, lng: 2.3522, genre: "Nachrichten", url: "https://rfimonde-96k.ice.infomaniak.ch/rfimonde-96k.mp3" },
 
     // Italy
+    { name: "RAI Radio 1",    country: "Italy", region: "Europe", lat: 41.9028, lng: 12.4964, genre: "News/Talk",       url: "http://icestreaming.rai.it/1.mp3" },
+    { name: "RTL 102.5",      country: "Italy", region: "Europe", lat: 45.46,  lng: 9.18,   genre: "Top 40/Pop",      url: "https://shoutcast.rtl.it:8000/" },
+    { name: "Radio Italia",   country: "Italy", region: "Europe", lat: 45.48,  lng: 9.24,   genre: "Ital. Musik",     url: "https://stream.radioitalia.it/" },
+    { name: "RDS",            country: "Italy", region: "Europe", lat: 41.90,  lng: 12.49,  genre: "Hits",            url: "https://broadcast.rds.it/rds.mp3" },
+    { name: "Radio Deejay",   country: "Italy", region: "Europe", lat: 45.46,  lng: 9.16,   genre: "Pop/Unterhaltung",url: "https://maggie.deejay.it/revival.mp3" },
+    { name: "Radio 105",      country: "Italy", region: "Europe", lat: 45.47,  lng: 9.17,   genre: "Urban/Pop",       url: "https://icecast.unitedradio.it/Radio105.mp3" },
+
+    { name: "Virgin Radio IT", country: "Italy", region: "Europe", lat: 45.47, lng: 9.17,   genre: "Rock",            url: "https://icecast.unitedradio.it/Virgin.mp3" },
+    { name: "Radio 24",       country: "Italy", region: "Europe", lat: 45.47,  lng: 9.14,   genre: "News/Wirtschaft", url: "https://shoutcast.radio24.it/listen.mp3" },
     { name: "RAI Radio 2", country: "Italy", region: "Europe", lat: 41.9028, lng: 12.4964, genre: "Pop", url: "https://icestreaming.rai.it/2.mp3" },
     { name: "RAI Radio 3", country: "Italy", region: "Europe", lat: 41.9028, lng: 12.4964, genre: "Klassik/Kultur", url: "https://icestreaming.rai.it/3.mp3" },
     { name: "RAI Radio 4", country: "Italy", region: "Europe", lat: 41.9028, lng: 12.4964, genre: "Talk/Nachrichten", url: "https://icestreaming.rai.it/4.mp3" },
@@ -201,6 +210,15 @@ const STATION_LOGOS = {
     "https://icecast.radiofrance.fr/mouv-midfi.mp3":         "https://charte.radiofrance.fr/images/mouv/mouv-avatar.png",
     "https://rfimonde-96k.ice.infomaniak.ch/rfimonde-96k.mp3": "https://www.rfi.fr/favicon.ico",
     // Italy
+    "http://icestreaming.rai.it/1.mp3":              "https://www.rai.it/favicon.ico",
+    "https://shoutcast.rtl.it:8000/":               "https://www.rtl.it/favicon.ico",
+    "https://stream.radioitalia.it/":               "https://www.radioitalia.it/favicon.ico",
+    "https://broadcast.rds.it/rds.mp3":             "https://www.rds.it/favicon.ico",
+    "https://maggie.deejay.it/revival.mp3":         "https://www.deejay.it/favicon.ico",
+    "https://icecast.unitedradio.it/Radio105.mp3":  "https://www.105.net/favicon.ico",
+
+    "https://icecast.unitedradio.it/Virgin.mp3":    "https://www.virginradio.it/favicon.ico",
+    "https://shoutcast.radio24.it/listen.mp3":      "https://www.radio24.ilsole24ore.com/favicon.ico",
     "https://icestreaming.rai.it/2.mp3": "https://i.imgur.com/gWbnr2R.jpg",
     "https://icestreaming.rai.it/3.mp3": "https://www.rai.it/favicon.ico",
     "https://icestreaming.rai.it/4.mp3": "https://www.rai.it/favicon.ico",
@@ -318,7 +336,7 @@ function initMap() {
 
     // Custom HUD marker icon (Diamond pin)
     const hudIcon = L.divIcon({
-        className: 'hud-marker',
+        className: 'midcentury-marker',
         html: '<div class="marker-pulse"></div><div class="marker-core"></div>',
         iconSize: [20, 20],
         iconAnchor: [10, 20] // Precise anchor for the tip

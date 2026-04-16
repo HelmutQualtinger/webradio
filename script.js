@@ -18,6 +18,9 @@ const stations = [
     { name: "BR24", country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "News", url: "https://dispatcher.rndfnk.com/br/br24/live/mp3/mid" },
     { name: "WDR 1Live", country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500, genre: "Pop/Youth", url: "https://wdr-1live-live.icecastssl.wdr.de/wdr/1live/live/mp3/128/stream.mp3" },
 
+    // Germany — Deutsche Welle
+    { name: "Deutsche Welle", country: "Germany", region: "Europe", lat: 50.7374, lng: 7.0982, genre: "News/International", url: "https://dw.audiostream.io/dw/1027/mp3/64/dw08" },
+
     // Germany — Deutschlandradio
     { name: "Deutschlandfunk",       country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "News/Talk",  url: "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3" },
     { name: "Deutschlandfunk Kultur",country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "Kultur",     url: "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3" },
@@ -165,6 +168,7 @@ const STATION_LOGOS = {
     // UK
     "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service": "https://rmp.files.bbci.co.uk/rmp-shared-assets/1.4.0/img/network-logos/national/bbc_world_service_colour.svg",
     // Germany
+    "https://dw.audiostream.io/dw/1027/mp3/64/dw08":            "https://www.dw.com/favicon.ico",
     "https://stream.rockantenne.de/rockantenne/stream/mp3":          "https://www.rockantenne.de/favicon.ico",
     "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3":      "https://www.deutschlandfunk.de/favicon.ico",
     "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3":      "https://www.deutschlandfunkkultur.de/favicon.ico",

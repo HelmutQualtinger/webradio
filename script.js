@@ -17,6 +17,32 @@ const stations = [
     { name: "BR3", country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "Pop/Talk", url: "https://dispatcher.rndfnk.com/br/br3/live/mp3/low" },
     { name: "BR24", country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "News", url: "https://dispatcher.rndfnk.com/br/br24/live/mp3/mid" },
     { name: "WDR 1Live", country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500, genre: "Pop/Youth", url: "https://wdr-1live-live.icecastssl.wdr.de/wdr/1live/live/mp3/128/stream.mp3" },
+    { name: "WDR 2",       country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "Pop/Nachrichten", url: "https://wdr-wdr2-nachrichten.icecast.wdr.de/wdr/wdr2/nachrichten/mp3/128/stream.mp3" },
+
+    // Germany — Deutschlandradio
+    { name: "Deutschlandfunk",       country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "News/Talk",  url: "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3" },
+    { name: "Deutschlandfunk Kultur",country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "Kultur",     url: "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3" },
+    { name: "Deutschlandfunk Nova",  country: "Germany", region: "Europe", lat: 50.9333, lng: 6.9500,  genre: "Wissen/Jung",url: "https://st03.sslstream.dlf.de/dlf/03/128/mp3/stream.mp3" },
+
+    // Germany — SWR / MDR
+    { name: "SWR3",       country: "Germany", region: "Europe", lat: 48.7758, lng: 9.1829,  genre: "Pop/Hits",  url: "https://swr-swr3-live.cast.addradio.de/swr/swr3/live/mp3/128/stream.mp3" },
+    { name: "MDR Aktuell",country: "Germany", region: "Europe", lat: 51.3397, lng: 12.3731, genre: "Nachrichten",url: "http://avw.mdr.de/streams/284300-3_mp3_high.m3u" },
+
+    // Germany — BR additional
+    { name: "Bayern 3",  country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "Pop/Talk",  url: "https://streams.br.de/bayern3_2.m3u" },
+    { name: "BR-Klassik",country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "Klassik",   url: "https://streams.br.de/br-klassik_2.m3u" },
+
+    // Germany — Private
+    { name: "Antenne Bayern", country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "Pop/Hits",   url: "http://mp3channels.webradio.antenne.de/antenne" },
+    { name: "Hit Radio FFH",  country: "Germany", region: "Europe", lat: 50.1109, lng: 8.6821,  genre: "Hits",       url: "http://mp3.ffh.de/radioffh/hqlivestream.mp3" },
+    { name: "Radio Bob",      country: "Germany", region: "Europe", lat: 51.3127, lng: 9.4797,  genre: "Rock",       url: "http://bob.hoerradar.de/radiobob-live-mp3-hq" },
+    { name: "Rock Antenne DE",country: "Germany", region: "Europe", lat: 48.1351, lng: 11.5820, genre: "Rock",       url: "http://mp3channels.webradio.rockantenne.de/rockantenne" },
+    { name: "BigFM",          country: "Germany", region: "Europe", lat: 48.7758, lng: 9.1829,  genre: "Urban/Pop",  url: "http://srv05.bigstreams.de/bigfm-mp3-96.m3u" },
+    { name: "Sunshine Live",  country: "Germany", region: "Europe", lat: 49.4875, lng: 8.4660,  genre: "Electronic", url: "http://sunshinelive.hoerradar.de/sunshinelive-live-mp3-hq" },
+    { name: "89.0 RTL",       country: "Germany", region: "Europe", lat: 51.4969, lng: 11.9691, genre: "Pop/Hits",   url: "http://webradio.89.0rtl.de/livestream128.m3u" },
+    { name: "Planet Radio",   country: "Germany", region: "Europe", lat: 50.1109, lng: 8.6821,  genre: "Pop/Dance",  url: "http://mp3.planetradio.de/planetradio/hqlivestream.aac" },
+    { name: "Radio Hamburg",  country: "Germany", region: "Europe", lat: 53.5753, lng: 10.0153, genre: "Pop/Hits",   url: "http://stream.radiohamburg.de/rhh/mp3-128/direct/" },
+    { name: "FluxFM",         country: "Germany", region: "Europe", lat: 52.5200, lng: 13.4050, genre: "Indie/Chill",url: "https://fluxmusic.api.radiosphere.io/channels/chillout-radio/stream.mp3" },
 
     // Austria — ORF Bundesweit
     { name: "ORF Ö1", country: "Austria", region: "Europe", lat: 48.2082, lng: 16.3738, genre: "Kultur/News", url: "https://orf-live.ors-shoutcast.at/oe1-q2a" },
@@ -152,7 +178,25 @@ const STATION_LOGOS = {
     // UK
     "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service": "https://rmp.files.bbci.co.uk/rmp-shared-assets/1.4.0/img/network-logos/national/bbc_world_service_colour.svg",
     // Germany
-    "https://stream.rockantenne.de/rockantenne/stream/mp3":          "http://www.rockantenne.de/logos/rock-antenne/apple-touch-icon.png",
+    "https://stream.rockantenne.de/rockantenne/stream/mp3":          "https://www.rockantenne.de/favicon.ico",
+    "https://wdr-wdr2-nachrichten.icecast.wdr.de/wdr/wdr2/nachrichten/mp3/128/stream.mp3": "https://www.wdr2.de/favicon.ico",
+    "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3":      "https://www.deutschlandfunk.de/favicon.ico",
+    "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3":      "https://www.deutschlandfunkkultur.de/favicon.ico",
+    "https://st03.sslstream.dlf.de/dlf/03/128/mp3/stream.mp3":      "https://www.deutschlandradio.de/favicon.ico",
+    "https://swr-swr3-live.cast.addradio.de/swr/swr3/live/mp3/128/stream.mp3": "https://www.swr3.de/favicon.ico",
+    "http://avw.mdr.de/streams/284300-3_mp3_high.m3u":              "https://www.mdr.de/favicon.ico",
+    "https://streams.br.de/bayern3_2.m3u":                          "https://www.br.de/favicon.ico",
+    "https://streams.br.de/br-klassik_2.m3u":                       "https://www.br-klassik.de/favicon.ico",
+    "http://mp3channels.webradio.antenne.de/antenne":               "https://www.antennebayern.de/favicon.ico",
+    "http://mp3.ffh.de/radioffh/hqlivestream.mp3":                  "https://www.ffh.de/favicon.ico",
+    "http://bob.hoerradar.de/radiobob-live-mp3-hq":                 "https://www.radiobob.de/favicon.ico",
+    "http://mp3channels.webradio.rockantenne.de/rockantenne":        "https://www.rockantenne.de/favicon.ico",
+    "http://srv05.bigstreams.de/bigfm-mp3-96.m3u":                  "https://www.bigfm.de/favicon.ico",
+    "http://sunshinelive.hoerradar.de/sunshinelive-live-mp3-hq":    "https://www.sunshine-live.de/favicon.ico",
+    "http://webradio.89.0rtl.de/livestream128.m3u":                 "https://www.890rtl.de/favicon.ico",
+    "http://mp3.planetradio.de/planetradio/hqlivestream.aac":       "https://www.planetradio.de/favicon.ico",
+    "http://stream.radiohamburg.de/rhh/mp3-128/direct/":            "https://www.radiohamburg.de/favicon.ico",
+    "https://fluxmusic.api.radiosphere.io/channels/chillout-radio/stream.mp3": "https://www.fluxfm.de/favicon.ico",
     "https://icecast.ndr.de/ndr/ndr2/niedersachsen/mp3/128/stream.mp3": "https://www.ndr.de/favicon.ico",
     "https://icecast.ndr.de/ndr/ndrkultur/live/mp3/128/stream.mp3":  "https://www.ndr.de/favicon.ico",
     "https://dispatcher.rndfnk.com/br/br1/obb/mp3/mid": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/BR1_Logo_2024.svg/3840px-BR1_Logo_2024.svg.png",

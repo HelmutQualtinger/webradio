@@ -153,6 +153,24 @@ const stations = [
 
     // Asia
     { name: "All India Radio", country: "India", region: "Asia", lat: 28.6139, lng: 77.2090, genre: "Talk/Musik", url: "https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/chunklist.m3u8" },
+
+    // Cuba
+    { name: "Radio Reloj", country: "Cuba", region: "North America", lat: 23.1136, lng: -82.3666, genre: "News/Zeitansage", url: "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq" },
+    { name: "Radio Rebelde", country: "Cuba", region: "North America", lat: 23.1136, lng: -82.3666, genre: "News/Talk", url: "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/kHKL7tWd" },
+    { name: "Cuban Flow Radio", country: "Cuba", region: "North America", lat: 23.1136, lng: -82.3666, genre: "Latin Pop/Reggaeton", url: "http://nap.casthost.net:9194/stream.mp3" },
+    { name: "Radio Campesina Cubana", country: "Cuba", region: "North America", lat: 23.1136, lng: -82.3666, genre: "Salsa/Son", url: "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana" },
+    { name: "La Salsa Cubana", country: "Cuba", region: "North America", lat: 23.1136, lng: -82.3666, genre: "Salsa/Reggaeton", url: "https://stream.zeno.fm/uf2r0d5ny39uv" },
+
+    // Brazil
+    { name: "Antena 1", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "Adult Contemporary", url: "http://antena1.newradio.it/stream" },
+    { name: "Radio Bossa Nova Brazil", country: "Brazil", region: "South America", lat: -22.9068, lng: -43.1729, genre: "Bossa Nova", url: "http://54.38.43.201:8009/stream-128kmp3-BossaNovaBrazil" },
+    { name: "Radio Saudade FM", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "Classic Hits/Flashback", url: "https://playerservices.streamtheworld.com/api/livestream-redirect/SAUDADE_FMAAC.aac" },
+    { name: "CBN São Paulo", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "News/Talk", url: "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac" },
+    { name: "Radio Bandeirantes", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "News/Talk", url: "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8" },
+    { name: "BandNews FM", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "News", url: "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC.m3u8" },
+    { name: "Radio Jovem Pan", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "News/Talk", url: "https://stream.zeno.fm/c45wbq2us3buv" },
+    { name: "Radio Globo", country: "Brazil", region: "South America", lat: -22.9068, lng: -43.1729, genre: "Talk/Variety", url: "https://24423.live.streamtheworld.com:443/RADIO_GLOBO_RJAAC.aac?dist=site" },
+    { name: "Radio Mix FM", country: "Brazil", region: "South America", lat: -23.5505, lng: -46.6333, genre: "Pop", url: "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_SAOPAULOAAC.aac" },
 ];
 
 // --- Logo resolution ---
@@ -237,14 +255,14 @@ const STATION_LOGOS = {
     "https://icecast.radiofrance.fr/mouv-midfi.mp3":         "https://charte.radiofrance.fr/images/mouv/mouv-avatar.png",
     "https://rfimonde-96k.ice.infomaniak.ch/rfimonde-96k.mp3": "https://www.rfi.fr/favicon.ico",
     // Italy
-    "http://icestreaming.rai.it/1.mp3":              "https://www.rai.it/favicon.ico",
+    "http://icestreaming.rai.it/1.mp3":              "https://www.google.com/s2/favicons?domain=raiplaysound.it&sz=64",
     "https://icecast.unitedradio.it/Radio105.mp3":  "https://www.105.net/favicon.ico",
 
     "https://icecast.unitedradio.it/Virgin.mp3":    "https://www.virginradio.it/favicon.ico",
     "https://icestreaming.rai.it/2.mp3": "https://i.imgur.com/gWbnr2R.jpg",
-    "https://icestreaming.rai.it/3.mp3": "https://www.rai.it/favicon.ico",
-    "https://icestreaming.rai.it/4.mp3": "https://www.rai.it/favicon.ico",
-    "https://icestreaming.rai.it/5.mp3": "https://www.rai.it/favicon.ico",
+    "https://icestreaming.rai.it/3.mp3": "https://www.google.com/s2/favicons?domain=raiplaysound.it&sz=64",
+    "https://icestreaming.rai.it/4.mp3": "https://www.google.com/s2/favicons?domain=raiplaysound.it&sz=64",
+    "https://icestreaming.rai.it/5.mp3": "https://www.google.com/s2/favicons?domain=raiplaysound.it&sz=64",
     // South Tyrol
     "http://radiobzlive.rai.it/RAIBZ_Livestream": "http://www.raibz.rai.it/de/touch/square.png",
     "http://radiobzlive.rai.it/RAI_AltoAdige":    "http://www.raibz.rai.it/de/touch/square.png",
@@ -259,19 +277,40 @@ const STATION_LOGOS = {
     // Mennonite
     "https://streams.radiomast.io/79ce8dd0-c0e9-4443-b887-0fdc1617f8bc": "https://bbn1.bbnradio.org/russian/wp-content/uploads/sites/10/2023/03/BBN-Amazon-logo48x48Final.png",
     "https://radio.mcson.org/stream": "https://www.mcson.org/wp-content/uploads/2014/07/105.9-logo.jpg",
+    // Austria — O94
+    "http://stream.o94.at:8001/live.mp3": "https://o94.at/favicon.ico",
+    // Plautdietsch / Mennonite
+    "http://www.segenswelle.de:8000/plautdietsch": "https://www.sw-radio.com/favicon.ico",
+    "http://s2.stationplaylist.com:7044/listen.aac": "https://www.google.com/s2/favicons?domain=destemmradio.org&sz=64",
     // Africa
     "https://s37.derstream.net/hitradio-namibia.mp3": "https://hitradio.com.na/favicon.ico",
     // Turkey
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM.mp3":      "https://mediacdns.karnaval.com/media/station_media/3/icons/favicon.ico",
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM.mp3":        "https://mediacdns.karnaval.com/media/station_media/4/icons/favicon.ico",
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK.mp3":      "https://mediacdns.karnaval.com/media/station_media/5/icons/favicon.ico",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM.mp3":      "https://metrofm.com.tr/favicon.ico",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM.mp3":        "https://joyfm.com.tr/favicon.ico",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK.mp3":      "https://mediacdns.karnaval.com/media/station_media/4/logos/meta_image.png",
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM.mp3":      "https://mediacdns.karnaval.com/media/station_media/1/icons/favicon.ico",
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO.mp3":  "https://mediacdns.karnaval.com/media/station_media/6/icons/favicon.ico",
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/BORUSAN_KLASIK.mp3":"https://www.borusanmuzik.com.tr/favicon.ico",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO.mp3":  "https://mediacdns.karnaval.com/media/station_media/15/logos/meta_image.png",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/BORUSAN_KLASIK.mp3":"https://mediacdns.karnaval.com/media/station_media/11/logos/meta_image.png",
     "https://listen.powerapp.com.tr/powerturk/mpeg/icecast.audio": "https://www.powerapp.com.tr/favicon.ico",
     "https://listen.powerapp.com.tr/powerfm/mpeg/icecast.audio":   "https://www.powerapp.com.tr/favicon.ico",
     // Asia
     "https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/chunklist.m3u8": "https://www.google.com/s2/favicons?domain=allindiaradio.gov.in&sz=64",
+    // Cuba
+    "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/b3jbfThq": "https://static2.mytuner.mobi/media/tvos_radios/B7dTgwMGWB.png",
+    "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/kHKL7tWd": "https://static2.mytuner.mobi/media/tvos_radios/917/radio-rebelde-am.c2316379.png",
+    "http://nap.casthost.net:9194/stream.mp3": "https://play-lh.googleusercontent.com/VP7tk6nSYCYaGxxIIzoj7KICDvMhVnsNfTnSSOmGESvDjk6NfDlPJgcxI6jDH0CeoRM=w240-h480-rw",
+    "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana": "https://www.google.com/s2/favicons?domain=radioscuba.com&sz=64",
+    "https://stream.zeno.fm/uf2r0d5ny39uv": "https://www.google.com/s2/favicons?domain=radioscuba.com&sz=64",
+    // Brazil
+    "http://antena1.newradio.it/stream": "https://www.antena1.com.br/apple-touch-icon.png",
+    "http://54.38.43.201:8009/stream-128kmp3-BossaNovaBrazil": "https://www.vip-radios.fm/favicon.ico",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/SAUDADE_FMAAC.aac": "https://img.radios.com.br/radio/lg/radio8_1626274312.png",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac": "https://www.google.com/s2/favicons?domain=cbn.com.br&sz=64",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8": "https://www.google.com/s2/favicons?domain=radiobandeirantes.com.br&sz=64",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC.m3u8": "https://www.google.com/s2/favicons?domain=bandnewsfm.band.uol.com.br&sz=64",
+    "https://stream.zeno.fm/c45wbq2us3buv": "https://img.radios.com.br/radio/lg/radio8829_1708517690.png",
+    "https://24423.live.streamtheworld.com:443/RADIO_GLOBO_RJAAC.aac?dist=site": "https://www.google.com/s2/favicons?domain=radioglobo.globo.com&sz=64",
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_SAOPAULOAAC.aac": "https://www.google.com/s2/favicons?domain=radiomixfm.com.br&sz=64",
 };
 
 function getLogoUrl(streamUrl) {
@@ -350,10 +389,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function initMap() {
     map = L.map('map').setView([20, 0], 2);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: '&copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+        maxZoom: 19
     }).addTo(map);
 
     // Custom HUD marker icon (Diamond pin)

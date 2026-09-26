@@ -1,14 +1,14 @@
-# WebRadio — Sci-Fi Shortwave Aesthetic
+# WebRadio — Midcentury Modern Wood Aesthetic
 
-A retro-futuristic web radio receiver with a high-fidelity sci-fi aesthetic. This project features a distinctive digital UI, an interactive global map with custom diamond-shaped pins for station discovery, and support for a wide range of international radio streams.
+A midcentury modern web radio receiver with a warm, natural aesthetic. This project features a prominent wood grain design, rounded elements, and a comfortable, retro feel, incorporating an interactive global map with custom markers.
 
 ![WebRadio Screenshot Placeholder](screenshot.png)
 *(Note: Replace 'screenshot.png' with an actual screenshot of your application)*
 
 ## Features
 
-*   **Authentic Sci-Fi Aesthetic:** Implemented with custom CSS, featuring a dark digital interface, neon accents, scanlines, retro-futuristic fonts, and a distinctive color palette.
-*   **Interactive Global Map:** Discover radio stations worldwide using Leaflet.js. Features custom, diamond-shaped map pins with accurate geographic placement. Markers are grouped to prevent overlap.
+*   **Authentic Midcentury Modern Aesthetic:** Characterized by prominent wood grain textures, warm nut wood colors, rounded shapes, and a palette of muted, natural tones.
+*   **Interactive Global Map:** Discover radio stations worldwide using Leaflet.js. Features custom, rounded map pins with accurate geographic placement. Markers are grouped to prevent overlap.
 *   **Extensive Station Library:** Browse and stream a diverse collection of international radio stations, including a curated selection from Germany (Bavarian BR suite), Austria, Switzerland, France, Italy, Turkey, and more.
 *   **Real-time Metadata:** Displays "Now Playing" information for supported streams, leveraging Radio France's API and ICY metadata.
 *   **High-Quality Streaming:** Supports both standard MP3 streams and HLS (.m3u8) adaptive bitrate streams.
@@ -18,7 +18,7 @@ A retro-futuristic web radio receiver with a high-fidelity sci-fi aesthetic. Thi
 
 ## Technologies Used
 
-*   **HTML5 & CSS3:** For structuring the application and styling its unique retro sci-fi look.
+*   **HTML5 & CSS3:** For structuring the application and styling its midcentury modern wood look.
 *   **Vanilla JavaScript:** For core application logic, station management, playback, and UI interactions.
 *   **Leaflet.js:** Powers the interactive world map for station discovery.
 *   **Hls.js:** Enables playback of HLS (HTTP Live Streaming) audio streams.

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Mahogany wood grain -->
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#d06848"/>
+      <stop offset="0.08" stop-color="#8b3820"/>
+      <stop offset="0.18" stop-color="#5a1a0a"/>
+      <stop offset="0.28" stop-color="#b05038"/>
+      <stop offset="0.38" stop-color="#3d1208"/>
+      <stop offset="0.48" stop-color="#c05040"/>
+      <stop offset="0.58" stop-color="#7a2a14"/>
+      <stop offset="0.68" stop-color="#2a0a04"/>
+      <stop offset="0.78" stop-color="#9a3828"/>
+      <stop offset="0.88" stop-color="#c05840"/>
+      <stop offset="1"    stop-color="#d06848"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="turbulence" baseFrequency="0.016 0.42" numOctaves="5" seed="3" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="24" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- Varnish sheen -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"   stop-color="rgba(255,220,160,0.10)"/>
+      <stop offset="0.5" stop-color="rgba(255,255,255,0.03)"/>
+      <stop offset="1"   stop-color="rgba(0,0,0,0.12)"/>
+    </linearGradient>
+    <!-- Decorative border gradient -->
+    <linearGradient id="bordergrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="transparent"/>
+      <stop offset="0.3" stop-color="#b06050"/>
+      <stop offset="0.7" stop-color="#b06050"/>
+      <stop offset="1"   stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wood background -->
+  <rect width="1200" height="630" fill="url(#wood)" filter="url(#grain)"/>
+  <!-- Varnish overlay -->
+  <rect width="1200" height="630" fill="url(#sheen)"/>
+  <!-- Dark edge vignette -->
+  <rect width="1200" height="630" fill="none" stroke="#1a0603" stroke-width="16"/>
+
+  <!-- Top copper accent line -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#bordergrad)"/>
+  <!-- Bottom copper accent line -->
+  <rect x="0" y="627" width="1200" height="3" fill="url(#bordergrad)"/>
+
+  <!-- Central panel (darker inset) -->
+  <rect x="60" y="60" width="1080" height="510" rx="18"
+        fill="rgba(20,6,2,0.45)" stroke="#3a1208" stroke-width="1.5"/>
+  <!-- Panel top highlight -->
+  <rect x="60" y="60" width="1080" height="2" rx="1" fill="rgba(176,96,80,0.5)"/>
+
+  <!-- Speaker-grill dots top-left decorative -->
+  <g fill="rgba(176,96,80,0.25)">
+    <circle cx="120" cy="120" r="4"/><circle cx="140" cy="120" r="4"/><circle cx="160" cy="120" r="4"/>
+    <circle cx="120" cy="140" r="4"/><circle cx="140" cy="140" r="4"/><circle cx="160" cy="140" r="4"/>
+    <circle cx="120" cy="160" r="4"/><circle cx="140" cy="160" r="4"/><circle cx="160" cy="160" r="4"/>
+    <circle cx="120" cy="180" r="4"/><circle cx="140" cy="180" r="4"/><circle cx="160" cy="180" r="4"/>
+  </g>
+  <!-- Speaker-grill dots top-right -->
+  <g fill="rgba(176,96,80,0.25)">
+    <circle cx="1040" cy="120" r="4"/><circle cx="1060" cy="120" r="4"/><circle cx="1080" cy="120" r="4"/>
+    <circle cx="1040" cy="140" r="4"/><circle cx="1060" cy="140" r="4"/><circle cx="1080" cy="140" r="4"/>
+    <circle cx="1040" cy="160" r="4"/><circle cx="1060" cy="160" r="4"/><circle cx="1080" cy="160" r="4"/>
+    <circle cx="1040" cy="180" r="4"/><circle cx="1060" cy="180" r="4"/><circle cx="1080" cy="180" r="4"/>
+  </g>
+
+  <!-- Dial arc decoration -->
+  <path d="M 340 370 A 260 260 0 0 1 860 370" fill="none" stroke="rgba(176,96,80,0.3)" stroke-width="2"/>
+  <path d="M 360 390 A 240 240 0 0 1 840 390" fill="none" stroke="rgba(176,96,80,0.15)" stroke-width="1"/>
+
+  <!-- Frequency tick marks -->
+  <g stroke="rgba(196,144,80,0.5)" stroke-width="1.5">
+    <line x1="390" y1="375" x2="390" y2="360"/>
+    <line x1="460" y1="340" x2="455" y2="326"/>
+    <line x1="540" y1="320" x2="540" y2="305"/>
+    <line x1="620" y1="315" x2="620" y2="300"/>
+    <line x1="700" y1="320" x2="700" y2="305"/>
+    <line x1="775" y1="340" x2="780" y2="326"/>
+    <line x1="840" y1="375" x2="840" y2="360"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="210" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="88" font-weight="bold" letter-spacing="8"
+        fill="#f5e8e2" opacity="0.95">WORLD RADIO</text>
+
+  <!-- Subtitle bar -->
+  <rect x="340" y="228" width="520" height="2" fill="rgba(176,96,80,0.6)"/>
+  <text x="600" y="268" text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="22" letter-spacing="6"
+        fill="#d09888">DX SHORTWAVE RECEIVER · EST. 1974</text>
+  <rect x="340" y="280" width="520" height="1" fill="rgba(176,96,80,0.3)"/>
+
+  <!-- Tuning needle -->
+  <line x1="600" y1="300" x2="600" y2="380" stroke="#b86848" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="600" cy="385" r="7" fill="#b86848" stroke="rgba(0,0,0,0.4)" stroke-width="1.5"/>
+
+  <!-- Frequency display badge -->
+  <rect x="490" y="400" width="220" height="50" rx="6"
+        fill="rgba(10,4,2,0.6)" stroke="rgba(58,18,8,0.9)" stroke-width="1"/>
+  <text x="600" y="418" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="11" letter-spacing="3"
+        fill="#d09888">FREQ</text>
+  <text x="600" y="440" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="20" letter-spacing="2"
+        fill="#f5e8e2">SW · 9.520 MHz</text>
+
+  <!-- Feature pills -->
+  <rect x="210" y="490" width="160" height="32" rx="16"
+        fill="rgba(58,110,138,0.5)" stroke="rgba(58,110,138,0.7)" stroke-width="1"/>
+  <text x="290" y="511" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" letter-spacing="1"
+        fill="#f5e8e2">100+ STATIONS</text>
+
+  <rect x="390" y="490" width="160" height="32" rx="16"
+        fill="rgba(58,110,138,0.5)" stroke="rgba(58,110,138,0.7)" stroke-width="1"/>
+  <text x="470" y="511" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" letter-spacing="1"
+        fill="#f5e8e2">WORLD MAP</text>
+
+  <rect x="570" y="490" width="160" height="32" rx="16"
+        fill="rgba(58,110,138,0.5)" stroke="rgba(58,110,138,0.7)" stroke-width="1"/>
+  <text x="650" y="511" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" letter-spacing="1"
+        fill="#f5e8e2">FREE · NO APP</text>
+
+  <rect x="750" y="490" width="160" height="32" rx="16"
+        fill="rgba(58,110,138,0.5)" stroke="rgba(58,110,138,0.7)" stroke-width="1"/>
+  <text x="830" y="511" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" letter-spacing="1"
+        fill="#f5e8e2">LIVE STREAM</text>
+
+  <!-- URL watermark -->
+  <text x="600" y="555" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="14" letter-spacing="2"
+        fill="rgba(208,152,136,0.6)">helmutqualtinger.github.io/webradio</text>
+</svg>
